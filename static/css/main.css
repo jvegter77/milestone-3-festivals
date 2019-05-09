@@ -22,5 +22,52 @@ for paragraphs font-family: 'Montserrat', sans-serif;
 @media screen and (max-width: 992px) {
     .navbar-nav {
     margin-left: 0px;
+    }
 }
+
+.fixed-top {
+    background-color: #fafafa;
 }
+
+/* index.html styling */
+
+.jumbotron-fluid {
+    background: url('/static/images/home-festival-image.jpg') no-repeat center center; 
+    min-height: 600px;
+    margin-top: 0px;
+    padding-top: 100px;
+}
+
+.display-4 {
+    font-family: 'Baloo Bhai', cursive;
+    margin-top: 50px;
+    text-align: center;
+}
+
+@media screen and (max-width: 600px){
+    .jumbotron-fluid{
+        min-height: 635px;
+    }
+}
+
+@media screen and (max-width: 768px){
+    .display-4{
+        font-size: 40px;
+    }
+}
+
+@media screen and (max-width: 468px){
+    .display-4{
+        font-size: 20px;
+        margin-top: 50px;
+    }
+}
+
+@media screen and (max-width: 336px){
+    .jumbotron-fluid{
+        margin-top: 50px;
+    }
+}
+
+
+

@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css?family=Baloo+Bhai|Gugi|Montserrat');
+
+/* Usage of fonts
+
+for menus font-family: 'Gugi', cursive;
+for headers font-family: 'Baloo Bhai', cursive;
+for paragraphs font-family: 'Montserrat', sans-serif;
+
+*/
+
+/* menu styling */
+
+.navbar-nav {
+    margin-left: 50px;
+}
+
+.navbar-nav a{
+    font-family: 'Gugi', cursive;
+    font-size: 25px;
+}
+
+@media screen and (max-width: 992px) {
+    .navbar-nav {
+    margin-left: 0px;
+}
+}

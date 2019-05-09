@@ -25,8 +25,8 @@ for paragraphs font-family: 'Montserrat', sans-serif;
     }
 }
 
-.fixed-top {
-    background-color: #fafafa;
+.navbar {
+    background-color: white;
 }
 
 /* index.html styling */
@@ -66,6 +66,9 @@ for paragraphs font-family: 'Montserrat', sans-serif;
 @media screen and (max-width: 336px){
     .jumbotron-fluid{
         margin-top: 50px;
+    }
+    .navbar-brand img{
+        width: 100%;
     }
 }
 

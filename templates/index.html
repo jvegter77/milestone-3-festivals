@@ -16,5 +16,44 @@
     <h3>At your festivals you can:</h3>
 </div>
 
+<div class="container">
+    <div class="row">
+        <div class="col-sm">
+            <div class="card">
+              <img src="..." class="card-img-top" alt="...">
+              <div class="card-body">
+                <h4 class="card-title">View Festivals</h4>
+                <p class="card-text">By using the festival calendar and filter festivals by date or category.</p>
+                <a href="{{ url_for('view_festivals') }}" class="btn btn-primary">View festivals</a>
+              </div>
+            </div>
+        </div>
+        <div class="col-sm">
+            <div class="card">
+              <img src="..." class="card-img-top" alt="...">
+              <div class="card-body">
+                <h4 class="card-title">Add a festival</h4>
+                <p class="card-text">Add a festival if it is not on the calendar and let everybody know.</p>
+                <a href="{{ url_for('add_festival') }}" class="btn btn-primary">Add a festival</a>
+              </div>
+            </div>
+        </div>
+        <div class="col-sm">
+            <div class="card">
+              <img src="..." class="card-img-top" alt="...">
+              <div class="card-body">
+                <h4 class="card-title">Edit a festival</h4>
+                <p class="card-text">Change or add info to a festival if you feel it is incorrect.</p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+              </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container">
+    <h4>Total freedom is yours!</h4>
+    <p>As you see we deliver you total freedom and full control. You have the knwoledge, we have the platform so go check it out.</p>
+</div>
+
 
 {% endblock %}

@@ -14,6 +14,20 @@ mongo = PyMongo(app)
 def get_index():
     return render_template('index.html')
     
+@app.route('/view_festivals')
+def view_festivals():
+    return render_template('festivals.html')
+    
+@app.route('/add_festival')
+def add_festival():
+    return render_template('addfestival.html')
+    
+@app.route('/insert_festival', methods=['POST', 'GET'])
+def insert_festival():
+    festivals = mongo.db.festivals
+    festivals.insert_one(request.form.to_dict())
+    return redirect(url_for('view_festivals'))
+    
 if __name__ == '__main__':
     app.run(host=os.environ.get('IP'),
     port=int(os.environ.get('PORT')),

@@ -2,6 +2,7 @@ import os
 from flask import Flask, flash, render_template, redirect, request, url_for, session, abort, request
 from flask_pymongo import PyMongo
 from bson.objectid import ObjectId
+import datetime
 
 app = Flask(__name__)
 
@@ -22,7 +23,7 @@ def view_festivals():
 def add_festival():
     return render_template('addfestival.html')
     
-@app.route('/insert_festival', methods=['POST', 'GET'])
+@app.route('/insert_festival', methods=['POST'])
 def insert_festival():
     festivals = mongo.db.festivals
     festivals.insert_one(request.form.to_dict())

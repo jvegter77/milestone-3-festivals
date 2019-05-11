@@ -79,4 +79,10 @@ body {
 
 /* add festival styling */
 
+#addfestival-intro {
+    margin-top: 20px;
+}
 
+#festival-container {
+    margin-top: 20px;
+}

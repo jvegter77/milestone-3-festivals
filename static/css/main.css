@@ -86,3 +86,17 @@ body {
 #festival-container {
     margin-top: 20px;
 }
+
+.addfestivalicons{
+    font-size: 30px;
+}
+
+.footer {
+    margin-top:50px;
+}
+
+@media screen and (max-width: 432px) {
+    .form-control {
+        font-size: 12px;
+    }
+}

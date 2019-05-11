@@ -14,7 +14,7 @@
         <div class="col">
             <form action="{{ url_for('insert_festival') }}" method="POST">
                 <div class="form-group">
-                    <i class="fas fa-signature"></i>
+                    <i class="fas fa-signature addfestivalicons"></i>
                     <label for="Festival name">Festival name</label>
                     <input class="form-control" id="festivalname" name="festivalname" type="text" class="validate" placeholder="Enter the festival name">
                 </div>
@@ -23,23 +23,23 @@
     <div class="row">
         <div class="col">
             <div class="form-group">
-                <i class="far fa-calendar-alt">
+                <i class="far fa-calendar-alt addfestivalicons">
                 <label for="Start date"></i>Start date</label>
-                <input data-provide="datepicker" class="form-control" id="startdate" name="startdate" type="text" class="validate">
+                <input data-provide="datepicker" data-date-format="dd/mm/yyyy" class="form-control" id="startdate" name="startdate" type="text" class="datepicker">
             </div>
         </div>
         <div class="col">
             <div class="form-group">
-                <i class="far fa-calendar-alt">
-                <label for="Start date"></i>Start date</label>
-                <input data-provide="datepicker" class="form-control" id="startdate" name="startdate" type="text" class="validate">
+                <i class="far fa-calendar-alt addfestivalicons">
+                <label for="Start date"></i>End date</label>
+                <input data-provide="datepicker" data-date-format="dd/mm/yyyy" class="form-control" id="enddate" name="startdate" type="text" class="datepicker">
             </div>
         </div>
     </div>
     <div class="row">
         <div class="col">
             <div class="form-group">
-                <i class="fas fa-globe"></i>
+                <i class="fas fa-globe addfestivalicons"></i>
                 <label for="Country">Country</label>
                 <select id="country" name="country" class="form-control">
                     <option value="Afghanistan">Afghanistan</option>
@@ -291,32 +291,33 @@
         </div>
         <div class="col">
             <div class="form-group">
-                <i class="fas fa-city"></i>
+                <i class="fas fa-city addfestivalicons"></i>
                 <label for="City">City</label>
-                <input class="form-control" id="city" name="city" type="text" class="validate" placeholder="Enter the city for this festival">
+                <input class="form-control" id="city" name="city" type="text" class="validate" placeholder="Enter the city">
             </div>
         </div>
     </div>
         <div class="form-group">
-            <i class="fas fa-map-marked-alt"></i>
+            <i class="fas fa-map-marked-alt addfestivalicons"></i>
             <label for="Location">Location</label>
             <input class="form-control" id="location" name="location" type="text" class="validate" placeholder="Enter the specific location e.g. street, park, area">
         </div>
         <div class="form-group">
-            <i class="fas fa-atlas"></i>
+            <i class="fas fa-atlas addfestivalicons"></i>
             <label for="Website">Website</label>
             <input class="form-control" id="website" name="website" type="text" class="validate" placeholder="Does the festival have a webiste? If not leave blank">
         </div>
         <div class="form-group">
-            <i class="fab fa-angellist"></i>
+            <i class="fab fa-angellist addfestivalicons"></i>
             <label for="Desciption">Describe the festival</label>
             <input class="form-control" id="description" name="description" type="text" class="validate" placeholder="Describe the festival in youw own words">
         </div>
         <div class="form-group">
-            <i class="fas fa-tag"></i>
+            <i class="fas fa-tag addfestivalicons"></i>
             <label for="Category">Category</label>
-            <input class="form-control" id="category" name="location" type="text" class="validate" placeholder="Which category describes this festival best?">
+            <input class="form-control" id="category" name="category" type="text" class="validate" placeholder="Which category describes this festival best?">
         </div>
+        <button type="submit" class="btn btn-primary">Add festival!</button>
     </form>
     </div>
 </div>

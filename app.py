@@ -27,7 +27,11 @@ def add_festival():
 def insert_festival():
     festivals = mongo.db.festivals
     festivals.insert_one(request.form.to_dict())
-    return redirect(url_for('view_festivals'))
+    return redirect(url_for('thanks'))
+    
+@app.route('/thanks')
+def thanks():
+    return render_template('thankyou.html')
     
 if __name__ == '__main__':
     app.run(host=os.environ.get('IP'),

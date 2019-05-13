@@ -1,0 +1,12 @@
+{% extends 'base.html' %} 
+{% block content %}
+
+<div class="container" id="thankscontainer">
+    <h1>Thanks for adding a festival!</h1>
+    <p>You now have three options:</p>
+    <a href="#" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">View the festival you have added</a>
+    <a href="{{ url_for('view_festivals') }}" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">View festivals</a>
+    <a href="{{ url_for('add_festival') }}" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">Add another festival</a>
+</div>
+
+{% endblock %}

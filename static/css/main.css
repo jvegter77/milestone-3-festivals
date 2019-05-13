@@ -95,8 +95,18 @@ body {
     font-size: 30px;
 }
 
+/* view festivals styling */
+
+#festivals-banner img{
+    width: 100%;
+}
+
 .footer {
     margin-top:50px;
+}
+
+#thankscontainer {
+    margin-top: 200px;
 }
 
 @media screen and (max-width: 432px) {

@@ -8,6 +8,14 @@ for paragraphs font-family: 'Montserrat', sans-serif;
 
 */
 
+/* General Styling */
+
+.container-fluid {
+    margin-top: 100px;
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
 /* menu styling */
 
 body {

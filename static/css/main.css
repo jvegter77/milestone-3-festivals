@@ -87,6 +87,10 @@ body {
     margin-top: 20px;
 }
 
+#addfestival-banner img {
+    width: 100%;
+}
+
 .addfestivalicons{
     font-size: 30px;
 }
